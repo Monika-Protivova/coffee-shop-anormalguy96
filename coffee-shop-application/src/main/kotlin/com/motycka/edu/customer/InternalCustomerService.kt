@@ -13,6 +13,6 @@ class InternalCustomerService(
     }
 
     fun getDiscountPercent(userId: UserId): Double {
-        return customerRepository.selectCustomer(userId)?.discountPercent ?: error("User doesn't have a customer account")
+        return customerRepository.selectCustomer(userId)?.discountPercent ?: error("User does not have a customer account")
     }
 }
